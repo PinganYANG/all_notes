@@ -189,3 +189,37 @@ zone a la frontiere:
 
 
 
+
+
+##### Véhicule control tower (outbound)
+
+
+
+![image-20231109150841541](C:\Users\cimum\AppData\Roaming\Typora\typora-user-images\image-20231109150841541.png)
+
+![image-20231109152008693](C:\Users\cimum\AppData\Roaming\Typora\typora-user-images\image-20231109152008693.png)
+
+
+
+risque de ne pas avoir assez de voiture
+
+proposer le sénario
+
+
+
+documenter les décision 
+
+intégrer les criteria
+
+![image-20231109160551632](C:\Users\cimum\AppData\Roaming\Typora\typora-user-images\image-20231109160551632.png)
+
+
+
+
+
+灵感：
+
+用genai来预测车辆的rouge情况
+
+用genai+天气和路况等等信息 来预测一些zone的情况
+

@@ -34,3 +34,45 @@ class Solution:
 **要点**：
 
 ​	通过max函数实时更新答案
+
+
+
+##### 分配糖果
+
+相邻孩子评分**绝对高**的得到糖果更多，最低为1
+
+方法1：
+
+```python
+class Solution:
+    def candy(self, ratings: List[int]) -> int:
+        ans = [1] * len(ratings)
+        for i in range(len(ratings) - 1):
+            if ratings[i + 1] > ratings[i]:
+                ans[i+1] = ans[i] + 1
+        
+        for i in range(len(ratings) - 1,0,-1):
+            if ratings[i] < ratings[i-1]:
+                tmp = ans[i] + 1
+                print(tmp)
+                ans[i - 1] = max(tmp,ans[i-1])
+
+        return sum(ans)
+```
+
+左右遍历一遍，满足：
+
+- 向右遍历时，右边的始终比左边大1
+- 向左遍历时，左边的始终比右边大1，除非左边遇到了突变，这时要比较大小
+
+方法2：
+
+记录每个递增\递减序列的长度
+
+
+
+
+
+##### 射气球
+
+求一些最小数量的【钉子】，这些【钉子】可以【钉住】所有的目标【区间】
